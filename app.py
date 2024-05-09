@@ -12,7 +12,7 @@ import pdf2image
 import google.generativeai as genai
 
 
-genai.configure(api_key=os.getenv('Replace with your API Key'))
+genai.configure(api_key=os.getenv('YOUR_API_KEY'))
 
 def get_gemini_response(input,pdf_cotent,prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
